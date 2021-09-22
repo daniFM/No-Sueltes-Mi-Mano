@@ -63,7 +63,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -121,12 +121,12 @@ TextureImporter:
       name: Mobile_0
       rect:
         serializedVersion: 2
-        x: 280
-        y: 236
+        x: 0
+        y: 999
         width: 589
-        height: 1050
+        height: 1049
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,13 +142,13 @@ TextureImporter:
       name: Mobile_1
       rect:
         serializedVersion: 2
-        x: 1195
-        y: 1237
-        width: 97
-        height: 97
+        x: 605
+        y: 1913
+        width: 419
+        height: 114
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 63, y: 53, z: 71, w: 44}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -163,13 +163,13 @@ TextureImporter:
       name: Mobile_2
       rect:
         serializedVersion: 2
-        x: 1045
-        y: 722
+        x: 605
+        y: 1766
         width: 419
         height: 114
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 68, y: 54, z: 51, w: 36}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -184,12 +184,12 @@ TextureImporter:
       name: Mobile_3
       rect:
         serializedVersion: 2
-        x: 1045
-        y: 501
-        width: 419
-        height: 114
+        x: 605
+        y: 1639
+        width: 97
+        height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,12 +205,12 @@ TextureImporter:
       name: Mobile_4
       rect:
         serializedVersion: 2
-        x: 1221
-        y: 249
+        x: 738
+        y: 1680
         width: 53
         height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
