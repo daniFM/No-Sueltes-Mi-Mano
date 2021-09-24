@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Jam
+  m_Name: Jam 1
   m_Shader: {fileID: -6465566751694194690, guid: 94db6713904e8a84e9d4acbd49abd22e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -109,12 +109,12 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _WobbleX: 0
-    - _WobbleZ: 0
+    - _WobbleX: 0.5
+    - _WobbleZ: 0.5
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_2d0e14e7087d44099eba370cd420fd37: {r: 1, g: 0, b: 0, a: 0}
+    - Color_2d0e14e7087d44099eba370cd420fd37: {r: 1, g: 0.57535666, b: 0, a: 0}
     - Vector2_bde13bd9081d4424bffc7c9a3ebbfc05: {r: 0, g: 0, b: 0, a: 0}
     - Vector2_c335228be1a446b3b1374faf6e1487f3: {r: 1, g: 1, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}

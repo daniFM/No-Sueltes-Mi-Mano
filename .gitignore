@@ -60,4 +60,5 @@ crashlytics-build.properties
 
 ### Custom
 
-/UserSettings/
+/[Uu]serSettings/
+#UserSettings/EditorUserSettings.asset
