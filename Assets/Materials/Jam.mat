@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Jam
-  m_Shader: {fileID: -6465566751694194690, guid: d7fa9bf4bc4f548458cde6075d076167, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 94db6713904e8a84e9d4acbd49abd22e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -82,6 +82,7 @@ Material:
     m_Floats:
     - Vector1_07bc50ae87614a7cbaeb75d489baa055: 3
     - Vector1_099fd748afde4ae9b5a82b3eb7291cf0: 1
+    - Vector1_3fd52b21ce3542348535e017c33bed81: 0.11
     - Vector1_cd4ac46cfd1845469337c542c2bae0c1: 0
     - Vector1_dc40a9a52f2a42bcb8221c99be3bc971: 0.5
     - _AlphaClip: 0
@@ -108,6 +109,8 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
+    - _WobbleX: 0
+    - _WobbleZ: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
