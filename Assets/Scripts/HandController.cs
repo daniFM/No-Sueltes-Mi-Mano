@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HandController : MonoBehaviour
 {
+    public Transform handPivot;
     public Transform grabPosition;
     public Transform grabSphere;
     public float speed;
@@ -28,6 +29,10 @@ public class HandController : MonoBehaviour
             //Debug.Log("MouseX: " + Input.GetAxis("Mouse X") + "\nMouseY: " + Input.GetAxis("Mouse Y"));
             Vector3 force = new Vector3(Input.GetAxis("Mouse X"), 0, Input.GetAxis("Mouse Y")) * speed * Time.deltaTime;
             rb.AddForce(force, ForceMode.Acceleration);
+
+            Vector3 rot = transform.eulerAngles;
+            transform.LookAt(handPivot.position, -Vector3.up);
+            transform.eulerAngles = new Vector3(rot.x, transform.eulerAngles.y, rot.z);
         }
 
         if(Input.GetMouseButtonDown(0))
@@ -43,6 +48,7 @@ public class HandController : MonoBehaviour
             if(grabbedObject != null)
             {
                 grabbedObject.attachedRigidbody.isKinematic = false;
+                grabbedObject.attachedRigidbody.velocity = rb.velocity;
                 grabbedObject.isTrigger = false;
                 grabbedObject = null;
             }
@@ -79,10 +85,16 @@ public class HandController : MonoBehaviour
         if(contacts.Length > 0)
         {
             Collider closerObj = contacts[0];
-            for(int i = 1; i < contacts.Length; ++i)
+            for(int i = 0; i < contacts.Length; ++i)
             {
-                if( Vector3.Distance(contacts[i].ClosestPoint(grabPosition.position), grabPosition.position) <
-                    Vector3.Distance(closerObj.ClosestPoint(grabPosition.position), grabPosition.position))
+                if(contacts[i].tag == "Hand")
+                {
+                    GameController.instance.GrabHand();
+                    active = false;
+                    return null;
+                }
+                else if(Vector3.Distance(contacts[i].ClosestPoint(grabPosition.position), grabPosition.position) <
+                        Vector3.Distance(closerObj.ClosestPoint(grabPosition.position), grabPosition.position))
                 {
                     closerObj = contacts[i];
                 }
