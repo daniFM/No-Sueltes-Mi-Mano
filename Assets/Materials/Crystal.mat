@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Crystal
-  m_Shader: {fileID: -6465566751694194690, guid: fc7f3c8616fabed4d947958e8ebd897d, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: cbfcdf265b3257541897e5d549e09e33, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -95,9 +95,9 @@ Material:
     m_Floats:
     - Vector1_07bc50ae87614a7cbaeb75d489baa055: 3
     - Vector1_099fd748afde4ae9b5a82b3eb7291cf0: 1
-    - Vector1_5b8d256e0f904f0f95be03159cc74122: 4.53
-    - Vector1_cd4ac46cfd1845469337c542c2bae0c1: 0.51
+    - Vector1_cd4ac46cfd1845469337c542c2bae0c1: 0.17
     - Vector1_dc40a9a52f2a42bcb8221c99be3bc971: 0.5
+    - Vector1_eb2cbc8e7c8a46f0acdc7069981ee184: 0.2
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -125,8 +125,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - Color_2d0e14e7087d44099eba370cd420fd37: {r: 1, g: 1, b: 1, a: 0}
     - Color_947d0e2da6674c9cbf44220acaa75183: {r: 0.5784977, g: 0.9811321, b: 0.9811321, a: 0}
-    - Vector2_076acf70038a42839dd648fcf7801fe6: {r: -7.59, g: 0, b: 0, a: 0}
     - Vector2_3719a836c17849d68cb218315c55e93f: {r: 4.94, g: 0, b: 0, a: 0}
     - Vector2_bde13bd9081d4424bffc7c9a3ebbfc05: {r: 0, g: 0, b: 0, a: 0}
     - Vector2_c335228be1a446b3b1374faf6e1487f3: {r: 1, g: 1, b: 0, a: 0}
