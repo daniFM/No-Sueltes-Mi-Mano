@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Jam
-  m_Shader: {fileID: -6465566751694194690, guid: 94db6713904e8a84e9d4acbd49abd22e, type: 3}
+  m_Name: Verde Cesped
+  m_Shader: {fileID: -6465566751694194690, guid: d7fa9bf4bc4f548458cde6075d076167, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -82,8 +82,6 @@ Material:
     m_Floats:
     - Vector1_07bc50ae87614a7cbaeb75d489baa055: 3
     - Vector1_099fd748afde4ae9b5a82b3eb7291cf0: 1
-    - Vector1_3fd52b21ce3542348535e017c33bed81: 0.11
-    - Vector1_cd4ac46cfd1845469337c542c2bae0c1: 0
     - Vector1_dc40a9a52f2a42bcb8221c99be3bc971: 0.5
     - _AlphaClip: 0
     - _Blend: 0
@@ -109,12 +107,10 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _WobbleX: 0
-    - _WobbleZ: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_2d0e14e7087d44099eba370cd420fd37: {r: 1, g: 0, b: 0, a: 0}
+    - Color_2d0e14e7087d44099eba370cd420fd37: {r: 0.40437242, g: 0.7882353, b: 0.27843142, a: 0}
     - Vector2_bde13bd9081d4424bffc7c9a3ebbfc05: {r: 0, g: 0, b: 0, a: 0}
     - Vector2_c335228be1a446b3b1374faf6e1487f3: {r: 1, g: 1, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
@@ -122,7 +118,7 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &2335426891391648441
+--- !u!114 &5565958055195479002
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
