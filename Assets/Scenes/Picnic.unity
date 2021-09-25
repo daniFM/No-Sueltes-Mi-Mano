@@ -3579,6 +3579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 298bb69c5a9cc75469c4420b606a0cce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  handPivot: {fileID: 0}
   grabPosition: {fileID: 5678031006874448425}
   grabSphere: {fileID: 5678031007103492340}
   speed: 10000
