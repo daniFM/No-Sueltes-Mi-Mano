@@ -741,6 +741,7 @@ GameObject:
   - component: {fileID: 514035100}
   - component: {fileID: 514035099}
   - component: {fileID: 514035098}
+  - component: {fileID: 514035101}
   m_Layer: 0
   m_Name: Tela picnic 1
   m_TagString: Untagged
@@ -811,6 +812,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &514035101
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514035097}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4718051725048470943, guid: 08e7f08217d50d2498c33ba238cc27f1, type: 3}
 --- !u!1 &534872913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1957,6 +1972,8 @@ GameObject:
   - component: {fileID: 1670130826}
   - component: {fileID: 1670130825}
   - component: {fileID: 1670130824}
+  - component: {fileID: 1670130828}
+  - component: {fileID: 1670130827}
   m_Layer: 0
   m_Name: Botella
   m_TagString: Untagged
@@ -2027,6 +2044,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1670130827
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670130823}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &1670130828
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670130823}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3530312402806854997, guid: 38c1f6a2f1abb6f4f8b9a7af54ac0be8, type: 3}
 --- !u!1 &1821447180
 GameObject:
   m_ObjectHideFlags: 0

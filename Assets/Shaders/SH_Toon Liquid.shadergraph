@@ -346,7 +346,7 @@
                 "m_Node": {
                     "m_Id": "0d2f6648ad264047acc16b10f1336514"
                 },
-                "m_SlotId": 1
+                "m_SlotId": 0
             }
         },
         {
@@ -486,7 +486,7 @@
                 "m_Node": {
                     "m_Id": "0d2f6648ad264047acc16b10f1336514"
                 },
-                "m_SlotId": 0
+                "m_SlotId": 1
             }
         },
         {
@@ -640,7 +640,7 @@
                 "m_Node": {
                     "m_Id": "f28be826fcc346618a4cc76eea7c5642"
                 },
-                "m_SlotId": 1
+                "m_SlotId": 0
             }
         },
         {
@@ -668,7 +668,7 @@
                 "m_Node": {
                     "m_Id": "f28be826fcc346618a4cc76eea7c5642"
                 },
-                "m_SlotId": 0
+                "m_SlotId": 1
             }
         },
         {
@@ -738,7 +738,7 @@
                 "m_Node": {
                     "m_Id": "0f48304d9ee34ac896205f4476f6e475"
                 },
-                "m_SlotId": 0
+                "m_SlotId": 1
             }
         },
         {
@@ -752,7 +752,7 @@
                 "m_Node": {
                     "m_Id": "0f48304d9ee34ac896205f4476f6e475"
                 },
-                "m_SlotId": 1
+                "m_SlotId": 0
             }
         },
         {
@@ -820,7 +820,7 @@
     },
     "m_PreviewData": {
         "serializedMesh": {
-            "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
+            "m_SerializedMesh": "{\"mesh\":{\"fileID\":10200,\"guid\":\"0000000000000000e000000000000000\",\"type\":0}}",
             "m_Guid": ""
         }
     },
@@ -3649,9 +3649,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1534.9998779296875,
-            "y": 1730.0,
-            "width": 100.0,
+            "x": -1555.0,
+            "y": 1701.0,
+            "width": 99.0,
             "height": 101.0
         }
     },
@@ -4524,10 +4524,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -772.3612060546875,
-            "y": 1403.92724609375,
-            "width": 0.0,
-            "height": 0.0
+            "x": -788.0001220703125,
+            "y": 1410.0,
+            "width": 120.00000762939453,
+            "height": 149.00001525878907
         }
     },
     "m_Slots": [
@@ -5159,7 +5159,7 @@
     },
     "m_SurfaceType": 0,
     "m_AlphaMode": 0,
-    "m_TwoSided": false,
+    "m_TwoSided": true,
     "m_AlphaClip": true,
     "m_CustomEditorGUI": ""
 }
