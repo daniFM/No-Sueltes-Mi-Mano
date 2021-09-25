@@ -93,6 +93,10 @@ public class HandController : MonoBehaviour
                     active = false;
                     return null;
                 }
+                else if (contacts[i].tag == "Phone")
+                {
+                    GameController.instance.GrabPhone();
+                }
                 else if(Vector3.Distance(contacts[i].ClosestPoint(grabPosition.position), grabPosition.position) <
                         Vector3.Distance(closerObj.ClosestPoint(grabPosition.position), grabPosition.position))
                 {

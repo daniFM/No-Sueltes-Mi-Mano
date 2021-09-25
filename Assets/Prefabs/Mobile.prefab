@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5286234810899396460}
   - component: {fileID: 5286234810899396457}
   - component: {fileID: 5286234810899396458}
-  - component: {fileID: 5286234810899396459}
+  - component: {fileID: 4160851883808159259}
   m_Layer: 5
   m_Name: Mobile
   m_TagString: Untagged
@@ -79,32 +79,35 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5286234810899396459
+--- !u!114 &4160851883808159259
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5286234810899396461}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Script: {fileID: 11500000, guid: b67ab7d561e7bec4ab14170cd0dd1ca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 190
-    m_Bottom: 0
-  m_ChildAlignment: 1
-  m_Spacing: 20
-  m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 0
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
+  levelChats:
+  - clips:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    messages:
+    - 
+    - 
+    - 
+    - 
+    - 
+  - clips: []
+    messages: []
+  - clips: []
+    messages: []
 --- !u!1 &5286234810979884691
 GameObject:
   m_ObjectHideFlags: 0

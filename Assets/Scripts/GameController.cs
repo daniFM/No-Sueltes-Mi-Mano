@@ -26,5 +26,12 @@ public class GameController : MonoBehaviour
     public void GrabHand()
     {
         Debug.Log("HAND GRABBED");
+        GameManager.instance.GoToBedroom();
+    }
+
+    public void GrabPhone()
+    {
+        Debug.Log("PHONE GRABBED");
+        GameManager.instance.NextLevel();
     }
 }

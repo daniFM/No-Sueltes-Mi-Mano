@@ -7,12 +7,15 @@ public enum Scene
 {
     MainMenu,
     Picnic,
-    Dinner
+    Dinner,
+    Bedroom
 }
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+
+    public int levelIndex = 1;
 
     private void Awake()
     {
@@ -24,6 +27,11 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(this);
+
+            if(SceneManager.GetActiveScene().buildIndex != 0)
+            {
+                SceneManager.LoadScene(0);
+            }
         }
     }
 
@@ -39,13 +47,25 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
-        Fade.instance.FadeIn(1, OnFadeFinished);
-        
+        GoToBedroom();
     }
 
-    private void OnFadeFinished()
+    public void GoToBedroom()
     {
-        SceneManager.LoadScene((int)Scene.Picnic);
+        StartCoroutine(LoadScene(Scene.Bedroom));
+    }
+
+    public void NextLevel()
+    {
+        levelIndex++;
+        StartCoroutine(LoadScene((Scene)levelIndex));
+    }
+
+    private IEnumerator LoadScene(Scene scene)
+    {
+        Fade.instance.FadeIn(1);
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene((int)scene);
     }
 
     private void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, LoadSceneMode mode)
