@@ -1,38 +1,23 @@
 fileFormatVersion: 2
-guid: 77300c8fc6c6a9a4d9ad41340388e5ad
+guid: 5106cea67facd1d4f92e9e9738a1cf32
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: 4781951162920444690
-    second: Armature|ArmatureAction
+      74: -5153951810224498265
+    second: Armature.002|Agarrar
   - first:
-      74: -1422011007694221501
-    second: Armature|ArmatureAction.001
+      74: 3656176099244414663
+    second: Armature.002|ArmatureAction.003
   - first:
-      74: 6093225430303232669
-    second: Armature|ArmatureAction.002
+      74: 2693659394510238484
+    second: Armature.002|ArmatureAction.004
   - first:
-      74: 4419341551624498096
-    second: Armature|ArmatureAction.003
-  - first:
-      74: 6221187890141279125
-    second: Armature|ArmatureAction.004
-  - first:
-      74: -885483897695478210
-    second: Armature|ArmatureAction.005
-  - first:
-      74: -8718967029479517697
-    second: Armature|ArmatureAction.006
-  - first:
-      74: 3381938824602478349
-    second: Armature|ArmatureAction.007
-  - first:
-      74: -8723042341593486856
-    second: Armature|ArmatureAction.008
+      74: 880922101991378556
+    second: Armature.002|Soltar
   externalObjects: {}
   materials:
-    materialImportMode: 0
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -57,7 +42,65 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature.002|Agarrar
+      takeName: Armature.002|Agarrar
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature.002|Soltar
+      takeName: Armature.002|Soltar
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
