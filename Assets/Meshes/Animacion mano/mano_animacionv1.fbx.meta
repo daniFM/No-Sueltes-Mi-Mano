@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d7ca3eb817589fd4f9088b9dd918b757
+guid: 77300c8fc6c6a9a4d9ad41340388e5ad
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
@@ -12,6 +12,24 @@ ModelImporter:
   - first:
       74: 6093225430303232669
     second: Armature|ArmatureAction.002
+  - first:
+      74: 4419341551624498096
+    second: Armature|ArmatureAction.003
+  - first:
+      74: 6221187890141279125
+    second: Armature|ArmatureAction.004
+  - first:
+      74: -885483897695478210
+    second: Armature|ArmatureAction.005
+  - first:
+      74: -8718967029479517697
+    second: Armature|ArmatureAction.006
+  - first:
+      74: 3381938824602478349
+    second: Armature|ArmatureAction.007
+  - first:
+      74: -8723042341593486856
+    second: Armature|ArmatureAction.008
   externalObjects: {}
   materials:
     materialImportMode: 0
