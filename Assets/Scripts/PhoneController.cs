@@ -1,24 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PhoneController : MonoBehaviour
 {
+    public float messageDelay = 1;
     public GameObject messageL;
     public GameObject messageR;
+    public ScrollRect scroll;
     public AudioSource source;
     public Transform chatContainer;
     public List<LevelChat> levelChats;
 
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        PerformChat(GameManager.instance.levelIndex-1);
     }
 
     public void PerformChat(int level)
@@ -32,10 +29,26 @@ public class PhoneController : MonoBehaviour
 
         for(int i = 0; i < lchat.clips.Count; ++i)
         {
-            source.PlayOneShot(lchat.clips[i]);
-            yield return new WaitForSeconds(lchat.clips[i].length);
+            yield return new WaitForSeconds(messageDelay);
+            AudioClip clip = lchat.clips[i];
+            source.PlayOneShot(clip);
 
-            //Instantiate ...
+            GameObject message;
+            if(clip.name.Contains("_M"))
+            {
+                message = Instantiate(messageR, chatContainer);
+            }
+            else
+            {
+                message = Instantiate(messageL, chatContainer);
+            }
+            //message.transform.SetSiblingIndex(0);
+            message.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = lchat.messages[i];
+
+            yield return new WaitForSeconds(0.1f);
+            scroll.verticalNormalizedPosition = 0;
+
+            yield return new WaitForSeconds(clip.length);
         }
     }
 }
