@@ -51,6 +51,7 @@ public class PhoneController : MonoBehaviour
             yield return new WaitForSeconds(clip.length);
         }
 
+        yield return new WaitForSeconds(5);
         GameManager.instance.NextLevel();
     }
 }

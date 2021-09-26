@@ -30,9 +30,9 @@ RectTransform:
   m_Father: {fileID: 5286234811157396504}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 286, y: -2.5}
   m_SizeDelta: {x: 100, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5286234810899396461
@@ -54,7 +54,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5286234810899396460
 RectTransform:
   m_ObjectHideFlags: 0
@@ -133,32 +133,85 @@ MonoBehaviour:
   chatContainer: {fileID: 5286234811157396504}
   levelChats:
   - clips:
-    - {fileID: 8300000, guid: ae209f1b23032464d837036a7c179dd7, type: 3}
+    - {fileID: 8300000, guid: 6e9c1667fc302d24ab96b962dc266f85, type: 3}
     - {fileID: 8300000, guid: 92f14c1011010b34fa85f701a2b035e4, type: 3}
-    - {fileID: 8300000, guid: ae209f1b23032464d837036a7c179dd7, type: 3}
+    - {fileID: 8300000, guid: 110f8166ed4a2cd4a9e99533047cf660, type: 3}
     - {fileID: 8300000, guid: f14a54f645ccbf2479b9b6287eb3f3d0, type: 3}
-    - {fileID: 8300000, guid: ae209f1b23032464d837036a7c179dd7, type: 3}
+    - {fileID: 8300000, guid: 49d408610e0418c429a94621dd25d25b, type: 3}
     - {fileID: 8300000, guid: 9351bccf589d36e4aafbb82d6817a811, type: 3}
-    - {fileID: 8300000, guid: ae209f1b23032464d837036a7c179dd7, type: 3}
+    - {fileID: 8300000, guid: 00bdd435199c4034295cf7b403676340, type: 3}
     - {fileID: 8300000, guid: 5a9d18c29f7db664cb18619812ac3650, type: 3}
-    - {fileID: 8300000, guid: ae209f1b23032464d837036a7c179dd7, type: 3}
+    - {fileID: 8300000, guid: f9d96fdfc3408df4b9cacdda1c5cda37, type: 3}
     messages:
-    - "Una cosa... \U0001F914"
+    - "Una cosa... \U0001F60A"
     - Dime!
     - Recuerdas nuestra primera cita?
     - "Ehhh, con lo que me curr\xE9 la merienda est\xE1s t\xFA que no me acuerdo
       \U0001F602"
     - "Pues me he encontrado fotos del picnic y hab\xEDa olvidado por completo que
-      fui yo quien dio el primer paso! \U0001F633"
+      fui yo quien dio el primer paso! \U0001F605"
     - "A ver, desde que nos sentamos se notaba que quer\xEDas que estuvi\xE9ramos
       m\xE1s cerca"
-    - "Y mira que era dif\xEDcil con tanto trasto en medio! \U0001F620"
-    - "La maldita cesta, qu\xE9 lata nos dio \U0001F611"
+    - "Y mira que era dif\xEDcil con tanto trasto en medio!"
+    - "La maldita cesta, qu\xE9 lata nos dio"
     - "Pero al final me las arregl\xE9 para llegar a tu mano \U0001F60E"
-  - clips: []
-    messages: []
-  - clips: []
-    messages: []
+  - clips:
+    - {fileID: 8300000, guid: cddf950e18f25a24088fd325764fbc4d, type: 3}
+    - {fileID: 8300000, guid: 1d8693e5f8fa4fe4081d9c1295974825, type: 3}
+    - {fileID: 8300000, guid: 409f7bc7010d31742a561995b256c96a, type: 3}
+    - {fileID: 8300000, guid: e69d35241450b83409250791c94bb623, type: 3}
+    - {fileID: 8300000, guid: f71b03d3d4879df4da77627c95f54224, type: 3}
+    - {fileID: 8300000, guid: 80940cd09e23df4479c646e4a1ad4816, type: 3}
+    - {fileID: 8300000, guid: 92befbeed3df5e849bb13fa476aa8efe, type: 3}
+    - {fileID: 8300000, guid: bcc00efdd6a69f141a9966280c34d6d1, type: 3}
+    - {fileID: 8300000, guid: 9349a6d68c9262c4bbf8140fbdfe8bd9, type: 3}
+    - {fileID: 8300000, guid: 35ad5482c93804741a7dbac701e53a4d, type: 3}
+    messages:
+    - No, si cosa que te propones, cosa que consigues
+    - "Y recuerdas aquel d\xEDa esperando el autob\xFAs para ir al examen?"
+    - "Ese examen que llevabas tan mal preparado pero en el que sacaste notaza? \U0001F61C"
+    - "Ese mismo. Te juro que pensaba que iba a suspender \U0001F62B"
+    - Recuerdo que estabas tan nerviosa que te temblaba la mano
+    - "No era capaz ni de sujetar bien los apuntes \U0001F641"
+    - "En ese momento mi voz parec\xEDa no ser suficiente para calmarte"
+    - Tuve que llegar hasta tu mano...
+    - "Y cuando est\xE1bamos agarrados not\xE9 c\xF3mo te fuiste calmando poco a
+      poco"
+    - "Pues en ese momento me di cuenta de que quer\xEDa ir en serio contigo"
+  - clips:
+    - {fileID: 8300000, guid: 4223584bc17b8734fa47e31e4101633c, type: 3}
+    - {fileID: 8300000, guid: 548dd2aa4a8e1c54d809ddab79ec4ceb, type: 3}
+    - {fileID: 8300000, guid: c27e53ddb4438844ea30b7e9e411511b, type: 3}
+    - {fileID: 8300000, guid: a155e85ae72c3114393134bcc7923904, type: 3}
+    - {fileID: 8300000, guid: e179d295288e6934aa7bd27d4a8b25be, type: 3}
+    - {fileID: 8300000, guid: 6e0c4d3a1558073478079fc5149e333d, type: 3}
+    - {fileID: 8300000, guid: c5136f0239c87bd46be0b29abfc1ef41, type: 3}
+    - {fileID: 8300000, guid: db4f720ca25e11946a58af120e6b0355, type: 3}
+    - {fileID: 8300000, guid: fb20d37bb20ca49459f7150197941c82, type: 3}
+    - {fileID: 8300000, guid: 4c8ccb7bfe73919429c328daf060caa0, type: 3}
+    - {fileID: 8300000, guid: 9af41fac5d912dd4d9f651bab1cea9b3, type: 3}
+    - {fileID: 8300000, guid: 4cbe34f2d45c26941b57ba5f7e780d2a, type: 3}
+    - {fileID: 8300000, guid: 42dc849b63dfd5e46be9a6bbc82a6e53, type: 3}
+    - {fileID: 8300000, guid: 37901b7a08034674c934649d3528fb17, type: 3}
+    - {fileID: 8300000, guid: b99217b3ab27b804ea6c1d75db8b6cd8, type: 3}
+    - {fileID: 8300000, guid: 90e123b98f0159448bd5bb218b26916c, type: 3}
+    messages:
+    - "Ay, por favor!!! Pero, y este repentino brote de decirme cosas bonitas?? \U0001F60D"
+    - "Pronto descubrir\xE1s por qu\xE9. Tienes plan para cenar? \U0001F604"
+    - Te apetece cenar juntos en el restaurante que hablamos?
+    - "Me has le\xEDdo la mente \U0001F60B"
+    - "No entiendo qu\xE9 est\xE1 pasando pero ME MUERO DE LA INTRIGA"
+    - "Nos vemos all\xED en una horita \U0001F60A"
+    - "Quer\xEDa darte una sorpresilla."
+    - Ay madre...
+    - "Podr\xEDamos dar un paso m\xE1s. Podr\xEDamos ir a\xFAn m\xE1s en serio."
+    - No te creo.
+    - "V\xE1monos a vivir juntos."
+    - Pero antes me tienes que prometer una cosa.
+    - Lo que quieras.
+    - No me sueltes la mano durante un ratito.
+    - "\xBFUn ratito? \xBFCu\xE1nto tiempo es eso?"
+    - "Dos minutos... \xA1No! Cinco, cinco minutos."
 --- !u!82 &7883805279235465685
 AudioSource:
   m_ObjectHideFlags: 0
@@ -327,7 +380,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.000060141687}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 5}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &5286234811157396502
 MonoBehaviour:
@@ -510,8 +563,8 @@ RectTransform:
   m_Father: {fileID: 5286234810979884690}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.00000011920929, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -588,9 +641,9 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 20}
+  m_SizeDelta: {x: -17, y: 20}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &5286234811862979338
 CanvasRenderer:
@@ -714,9 +767,9 @@ RectTransform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
+  m_SizeDelta: {x: 20, y: -17}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &5286234811966065154
 CanvasRenderer:
@@ -838,7 +891,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -951,9 +1004,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -17, y: -17}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &5286234812752972197
 CanvasRenderer:
