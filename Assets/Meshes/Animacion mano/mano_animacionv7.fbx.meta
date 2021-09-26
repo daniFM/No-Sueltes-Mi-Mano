@@ -7,12 +7,6 @@ ModelImporter:
       74: -5153951810224498265
     second: Armature.002|Agarrar
   - first:
-      74: 3656176099244414663
-    second: Armature.002|ArmatureAction.003
-  - first:
-      74: 2693659394510238484
-    second: Armature.002|ArmatureAction.004
-  - first:
       74: 880922101991378556
     second: Armature.002|Soltar
   externalObjects: {}
