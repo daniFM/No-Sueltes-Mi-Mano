@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         Fade.instance.FadeIn(3);
-        levelIndex++;
+        //levelIndex++;
         GameController.instance.phone.gameObject.SetActive(true);
     }
 
