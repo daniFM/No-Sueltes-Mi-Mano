@@ -29,6 +29,7 @@ public class HandController : MonoBehaviour
         {
             //Debug.Log("MouseX: " + Input.GetAxis("Mouse X") + "\nMouseY: " + Input.GetAxis("Mouse Y"));
             Vector3 force = new Vector3(Input.GetAxis("Mouse X"), 0, Input.GetAxis("Mouse Y")) * speed * Time.deltaTime;
+            force = transform.InverseTransformDirection(-force);
             rb.AddForce(force, ForceMode.Acceleration);
 
             Vector3 rot = transform.eulerAngles;
