@@ -137,7 +137,7 @@ public class HandController : MonoBehaviour
     {
         canMove = false;
         //active = false;
-        transform.DOMoveY(0.5f, 1);
+        transform.DOMoveY(0.75f, 1);
         yield return new WaitForSeconds(1);
         GameController.instance.GrabPhone();
     }
