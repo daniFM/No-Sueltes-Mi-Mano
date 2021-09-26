@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Mantel
-  m_Shader: {fileID: -6465566751694194690, guid: d88f32470cf28be48b2046fb36b05153, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: d7fa9bf4bc4f548458cde6075d076167, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -110,6 +110,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - Color_2d0e14e7087d44099eba370cd420fd37: {r: 0.8867924, g: 0, b: 0, a: 0}
     - Color_d8de63a18b14425b98ba480e05a445be: {r: 0.6792453, g: 0.086507656, b: 0.086507656, a: 0}
     - Vector2_bde13bd9081d4424bffc7c9a3ebbfc05: {r: 0, g: 0, b: 0, a: 0}
     - Vector2_c335228be1a446b3b1374faf6e1487f3: {r: 1, g: 1, b: 0, a: 0}
