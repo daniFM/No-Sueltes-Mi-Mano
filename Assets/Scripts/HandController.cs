@@ -30,6 +30,16 @@ public class HandController : MonoBehaviour
         canMove = true;
     }
 
+    private void OnEnable()
+    {
+        Cursor.visible = false;
+    }
+
+    private void OnDisable()
+    {
+        Cursor.visible = true;
+    }
+
     void Update()
     {
         //if(!active)
