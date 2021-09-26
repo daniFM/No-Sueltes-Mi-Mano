@@ -21,11 +21,14 @@ public class HandController : MonoBehaviour
     private bool grabbing;
     private Collider grabbedObject;
 
-    void Start()
+    IEnumerator Start()
     {
         rb = GetComponent<Rigidbody>();
-    }
 
+        yield return new WaitForSeconds(1);
+
+        canMove = true;
+    }
 
     void Update()
     {
@@ -128,7 +131,7 @@ public class HandController : MonoBehaviour
     {
         canMove = false;
         //active = false;
-        transform.DOMoveY(0.5f, 1);
+        transform.DOMoveY(transform.position.y - 0.6f, 1);
         yield return new WaitForSeconds(1);
         GameController.instance.GrabHand();
     }

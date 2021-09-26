@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(this);
 
-            if(SceneManager.GetActiveScene().buildIndex != 0)
+            if(levelIndex == 0 && SceneManager.GetActiveScene().buildIndex != 0)
             {
                 SceneManager.LoadScene(0);
             }
@@ -60,14 +60,29 @@ public class GameManager : MonoBehaviour
     public void NextLevel()
     {
         levelIndex++;
-        Debug.Log("NextLevel: " + levelIndex);
-        StartCoroutine(LoadScene((Scene)levelIndex));
+        if(levelIndex < 4)
+        {
+            Debug.Log("NextLevel: " + levelIndex);
+            StartCoroutine(LoadScene((Scene)levelIndex));
+        }
+        else
+        {
+            Debug.Log("GAME OVER");
+            StartCoroutine(LoadScene((int)Scene.MainMenu, 0));
+        }
     }
 
-    private IEnumerator LoadScene(Scene scene)
+    public void EndGame()
     {
-        Fade.instance.FadeIn(1);
-        yield return new WaitForSeconds(1);
+        Fade.instance.FadeIn(3);
+        levelIndex++;
+        GameController.instance.phone.gameObject.SetActive(true);
+    }
+
+    private IEnumerator LoadScene(Scene scene, float fadeInTime = 1)
+    {
+        Fade.instance.FadeIn(fadeInTime);
+        yield return new WaitForSeconds(fadeInTime);
         SceneManager.LoadScene((int)scene);
     }
 
@@ -77,7 +92,7 @@ public class GameManager : MonoBehaviour
         StartCoroutine(ExecuteAfterSeconds(0.5f));
     }
 
-    public IEnumerator ExecuteAfterSeconds(float time)
+    private IEnumerator ExecuteAfterSeconds(float time)
     {
         yield return new WaitForSeconds(time);
         Fade.instance.FadeOut(1);

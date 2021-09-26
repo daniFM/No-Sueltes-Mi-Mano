@@ -185,6 +185,14 @@ MonoBehaviour:
     - {fileID: 8300000, guid: a155e85ae72c3114393134bcc7923904, type: 3}
     - {fileID: 8300000, guid: e179d295288e6934aa7bd27d4a8b25be, type: 3}
     - {fileID: 8300000, guid: 6e0c4d3a1558073478079fc5149e333d, type: 3}
+    messages:
+    - "Ay, por favor!!! Pero, y este repentino brote de decirme cosas bonitas?? \U0001F60D"
+    - "Pronto descubrir\xE1s por qu\xE9. Tienes plan para cenar? \U0001F604"
+    - Te apetece cenar juntos en el restaurante que hablamos?
+    - "Me has le\xEDdo la mente \U0001F60B"
+    - "No entiendo qu\xE9 est\xE1 pasando pero ME MUERO DE LA INTRIGA"
+    - "Nos vemos all\xED en una horita \U0001F60A"
+  - clips:
     - {fileID: 8300000, guid: c5136f0239c87bd46be0b29abfc1ef41, type: 3}
     - {fileID: 8300000, guid: db4f720ca25e11946a58af120e6b0355, type: 3}
     - {fileID: 8300000, guid: fb20d37bb20ca49459f7150197941c82, type: 3}
@@ -196,12 +204,6 @@ MonoBehaviour:
     - {fileID: 8300000, guid: b99217b3ab27b804ea6c1d75db8b6cd8, type: 3}
     - {fileID: 8300000, guid: 90e123b98f0159448bd5bb218b26916c, type: 3}
     messages:
-    - "Ay, por favor!!! Pero, y este repentino brote de decirme cosas bonitas?? \U0001F60D"
-    - "Pronto descubrir\xE1s por qu\xE9. Tienes plan para cenar? \U0001F604"
-    - Te apetece cenar juntos en el restaurante que hablamos?
-    - "Me has le\xEDdo la mente \U0001F60B"
-    - "No entiendo qu\xE9 est\xE1 pasando pero ME MUERO DE LA INTRIGA"
-    - "Nos vemos all\xED en una horita \U0001F60A"
     - "Quer\xEDa darte una sorpresilla."
     - Ay madre...
     - "Podr\xEDamos dar un paso m\xE1s. Podr\xEDamos ir a\xFAn m\xE1s en serio."
@@ -563,7 +565,7 @@ RectTransform:
   m_Father: {fileID: 5286234810979884690}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.00000011920929, y: 0}
+  m_AnchorMin: {x: 0.00000023841858, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
