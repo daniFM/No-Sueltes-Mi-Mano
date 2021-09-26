@@ -822,17 +822,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2815580214828373937, guid: 3138b1d92a38df0478589a4cf82157d5, type: 3}
-      propertyPath: levelIndex
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 2815580214828373942, guid: 3138b1d92a38df0478589a4cf82157d5, type: 3}
       propertyPath: m_Name
       value: GameManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 2815580214828373942, guid: 3138b1d92a38df0478589a4cf82157d5, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3138b1d92a38df0478589a4cf82157d5, type: 3}
@@ -1738,7 +1730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3329679139952785163, guid: f2668ab270bf59f4a8e128f893120d86, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3329679139952785164, guid: f2668ab270bf59f4a8e128f893120d86, type: 3}
       propertyPath: m_Pivot.x

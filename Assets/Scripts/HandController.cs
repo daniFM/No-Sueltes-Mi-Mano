@@ -16,7 +16,7 @@ public class HandController : MonoBehaviour
     public Animator anim;
 
     private Rigidbody rb;
-    //private bool active = true;
+    private bool active = true;
     private bool canMove;
     private bool grabbing;
     private Collider grabbedObject;
@@ -42,8 +42,8 @@ public class HandController : MonoBehaviour
 
     void Update()
     {
-        //if(!active)
-        //    return;
+        if(!active)
+            return;
 
         if(canMove)
         {
@@ -140,7 +140,7 @@ public class HandController : MonoBehaviour
     private IEnumerator GrabHandRoutine()
     {
         canMove = false;
-        //active = false;
+        active = false;
         transform.DOMoveY(transform.position.y - 0.6f, 1);
         yield return new WaitForSeconds(1);
         GameController.instance.GrabHand();
@@ -149,7 +149,7 @@ public class HandController : MonoBehaviour
     private IEnumerator GrabPhoneRoutine()
     {
         canMove = false;
-        //active = false;
+        active = false;
         transform.DOMoveY(0.75f, 1);
         yield return new WaitForSeconds(1);
         GameController.instance.GrabPhone();
