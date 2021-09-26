@@ -25,6 +25,7 @@ public class PhoneController : MonoBehaviour
 
     public IEnumerator ChatRoutine(int level)
     {
+        Debug.Log("Performing chat: " + level);
         LevelChat lchat = levelChats[level];
 
         for(int i = 0; i < lchat.clips.Count; ++i)

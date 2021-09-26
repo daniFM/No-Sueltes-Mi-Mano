@@ -12,31 +12,48 @@ public class HandController : MonoBehaviour
     public float extensionMultiplier;
     public float speed;
     public float tractionForce;
+    public float shake;
     public LayerMask grabObjectLayer;
     public Animator anim;
+    public HandSound sound;
 
     private Rigidbody rb;
-    //private bool active = true;
+    private bool active = true;
     private bool canMove;
     private bool grabbing;
     private Collider grabbedObject;
 
-    void Start()
+    IEnumerator Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        yield return new WaitForSeconds(1);
+
+        canMove = true;
     }
 
+    private void OnEnable()
+    {
+        Cursor.visible = false;
+    }
+
+    private void OnDisable()
+    {
+        Cursor.visible = true;
+    }
 
     void Update()
     {
-        //if(!active)
-        //    return;
+        if(!active)
+            return;
 
         if(canMove)
         {
             //Debug.Log("MouseX: " + Input.GetAxis("Mouse X") + "\nMouseY: " + Input.GetAxis("Mouse Y"));
+            Vector3 shakeForce = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f)) * shake;
             Vector3 force = new Vector3(Input.GetAxis("Mouse X"), 0, Input.GetAxis("Mouse Y")) * speed * Time.deltaTime;
             force = transform.InverseTransformDirection(-force);
+            force += shakeForce;
             rb.AddForce(force, ForceMode.Acceleration);
 
             Vector3 rot = transform.eulerAngles;
@@ -127,16 +144,18 @@ public class HandController : MonoBehaviour
     private IEnumerator GrabHandRoutine()
     {
         canMove = false;
-        //active = false;
-        transform.DOMoveY(0.5f, 1);
+        active = false;
+        transform.DOMoveY(transform.position.y - 0.6f, 1);
         yield return new WaitForSeconds(1);
+        sound.source.spatialBlend = 0;
+        sound.PlaySound(HandSound.Sound.hand);
         GameController.instance.GrabHand();
     }
 
     private IEnumerator GrabPhoneRoutine()
     {
         canMove = false;
-        //active = false;
+        active = false;
         transform.DOMoveY(0.75f, 1);
         yield return new WaitForSeconds(1);
         GameController.instance.GrabPhone();
@@ -154,5 +173,8 @@ public class HandController : MonoBehaviour
                 //collision.transform.position = grabPosition.position; // se hace en el update
             }
         }
+
+        sound.source.spatialBlend = 1;
+        sound.PlaySound(HandSound.Sound.contact);
     }
 }

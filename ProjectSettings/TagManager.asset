@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Hand
   - Phone
+  - Keys
   layers:
   - Default
   - TransparentFX
