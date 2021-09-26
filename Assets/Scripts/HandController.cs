@@ -10,6 +10,7 @@ public class HandController : MonoBehaviour
     public float speed;
     public float tractionForce;
     public LayerMask grabObjectLayer;
+    public Animator anim;
 
     private Rigidbody rb;
     private bool active;
@@ -40,6 +41,7 @@ public class HandController : MonoBehaviour
             active = true;
             grabbing = true;
             grabbedObject = GrabObject();
+            anim.SetTrigger("SwitchGrip");
         }
         else if(Input.GetMouseButtonUp(0))
         {
@@ -52,6 +54,7 @@ public class HandController : MonoBehaviour
                 grabbedObject.isTrigger = false;
                 grabbedObject = null;
             }
+            anim.SetTrigger("SwitchGrip");
         }
 
         if(Input.GetMouseButton(0))
@@ -114,6 +117,7 @@ public class HandController : MonoBehaviour
         {
             if(collision.gameObject.layer == 7)
             {
+                // GRAB OBJECT
                 collision.rigidbody.isKinematic = true;
                 collision.collider.isTrigger = true;
                 //collision.transform.position = grabPosition.position; // se hace en el update
