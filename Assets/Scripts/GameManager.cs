@@ -7,6 +7,7 @@ public enum Scene
 {
     MainMenu,
     Picnic,
+    BusStation,
     Dinner,
     Bedroom
 }
@@ -52,12 +53,14 @@ public class GameManager : MonoBehaviour
 
     public void GoToBedroom()
     {
+        Debug.Log("GoToBedroom");
         StartCoroutine(LoadScene(Scene.Bedroom));
     }
 
     public void NextLevel()
     {
         levelIndex++;
+        Debug.Log("NextLevel: " + levelIndex);
         StartCoroutine(LoadScene((Scene)levelIndex));
     }
 

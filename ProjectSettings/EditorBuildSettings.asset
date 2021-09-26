@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Picnic.unity
     guid: a5a8e18f98ce90245980c64b2dc1cd3f
   - enabled: 1
-    path: Assets/Scenes/Bus Station.unity
+    path: Assets/Scenes/BusStation.unity
     guid: 7113129583b027b42b4d12f54b59b549
   - enabled: 1
     path: Assets/Scenes/Dinner.unity
