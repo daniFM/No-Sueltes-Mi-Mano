@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class HandController : MonoBehaviour
 {
@@ -15,7 +16,8 @@ public class HandController : MonoBehaviour
     public Animator anim;
 
     private Rigidbody rb;
-    private bool active;
+    //private bool active = true;
+    private bool canMove;
     private bool grabbing;
     private Collider grabbedObject;
 
@@ -27,7 +29,10 @@ public class HandController : MonoBehaviour
 
     void Update()
     {
-        if(active)
+        //if(!active)
+        //    return;
+
+        if(canMove)
         {
             //Debug.Log("MouseX: " + Input.GetAxis("Mouse X") + "\nMouseY: " + Input.GetAxis("Mouse Y"));
             Vector3 force = new Vector3(Input.GetAxis("Mouse X"), 0, Input.GetAxis("Mouse Y")) * speed * Time.deltaTime;
@@ -44,7 +49,7 @@ public class HandController : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0))
         {
-            active = true;
+            canMove = true;
             grabbing = true;
             grabbedObject = GrabObject();
             anim.SetTrigger("SwitchGrip");
@@ -69,6 +74,7 @@ public class HandController : MonoBehaviour
             {
                 Rigidbody rbObj = grabbedObject.attachedRigidbody;
 
+                
                 if(!rbObj.isKinematic)
                 {
                     Vector3 force = (grabPosition.position - rbObj.transform.position) * tractionForce * Time.deltaTime;
@@ -98,13 +104,14 @@ public class HandController : MonoBehaviour
             {
                 if(contacts[i].tag == "Hand")
                 {
-                    GameController.instance.GrabHand();
-                    active = false;
+                    Debug.Log("Grab hand");
+                    StartCoroutine(GrabHandRoutine());
                     return null;
                 }
                 else if (contacts[i].tag == "Phone")
                 {
-                    GameController.instance.GrabPhone();
+                    StartCoroutine(GrabPhoneRoutine());
+                    return null;
                 }
                 else if(Vector3.Distance(contacts[i].ClosestPoint(grabPosition.position), grabPosition.position) <
                         Vector3.Distance(closerObj.ClosestPoint(grabPosition.position), grabPosition.position))
@@ -115,6 +122,24 @@ public class HandController : MonoBehaviour
             return closerObj;
         }
         return null;
+    }
+
+    private IEnumerator GrabHandRoutine()
+    {
+        canMove = false;
+        //active = false;
+        transform.DOMoveY(0.5f, 1);
+        yield return new WaitForSeconds(1);
+        GameController.instance.GrabHand();
+    }
+
+    private IEnumerator GrabPhoneRoutine()
+    {
+        canMove = false;
+        //active = false;
+        transform.DOMoveY(0.75f, 1);
+        yield return new WaitForSeconds(1);
+        GameController.instance.GrabPhone();
     }
 
     private void OnCollisionEnter(Collision collision)
