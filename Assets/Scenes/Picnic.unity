@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 10441791}
   - component: {fileID: 10441790}
   - component: {fileID: 10441789}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tapa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &42250741
 GameObject:
@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 42250742}
   - component: {fileID: 42250744}
   - component: {fileID: 42250743}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: asa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,9 @@ GameObject:
   - component: {fileID: 133968242}
   - component: {fileID: 133968241}
   - component: {fileID: 133968240}
-  m_Layer: 0
+  - component: {fileID: 133968244}
+  - component: {fileID: 133968243}
+  m_Layer: 7
   m_Name: Cuchillo Picnic (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -397,6 +399,35 @@ Transform:
   m_Father: {fileID: 2005409267}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 214.875}
+--- !u!54 &133968243
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133968239}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &133968244
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133968239}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16015019, y: 1.7819372, z: 0.057660412}
+  m_Center: {x: -0.042229, y: 0.49534762, z: -0.00000016422158}
 --- !u!1 &231747638
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +439,9 @@ GameObject:
   - component: {fileID: 231747641}
   - component: {fileID: 231747640}
   - component: {fileID: 231747639}
-  m_Layer: 0
+  - component: {fileID: 231747643}
+  - component: {fileID: 231747642}
+  m_Layer: 7
   m_Name: Piedra (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -472,12 +505,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 231747638}
   m_LocalRotation: {x: 0.32376933, y: -0.81626856, z: -0.47835064, w: 0.0077324696}
-  m_LocalPosition: {x: 6.5127263, y: 0.47839564, z: -6.4659524}
+  m_LocalPosition: {x: 6.5127263, y: 0.772, z: -6.4659524}
   m_LocalScale: {x: 0.47278988, y: 0.47278997, z: 0.47278994}
   m_Children: []
   m_Father: {fileID: 258376071}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 230.888, y: 390.732, z: 481.831}
+--- !u!65 &231747642
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231747638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4696357, y: 1.0688818, z: 1.1049144}
+  m_Center: {x: 0.13169847, y: 0.083446555, z: -0.10161703}
+--- !u!54 &231747643
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231747638}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &240701235
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,7 +551,7 @@ GameObject:
   - component: {fileID: 240701236}
   - component: {fileID: 240701238}
   - component: {fileID: 240701237}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tapa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -569,7 +631,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 258376071}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Piedras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,7 +646,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 258376070}
   m_LocalRotation: {x: -0, y: 0.9493739, z: -0, w: 0.3141484}
-  m_LocalPosition: {x: 5.672086, y: 0, z: 7.1563034}
+  m_LocalPosition: {x: 5.672086, y: 0.37, z: 7.1563034}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2041537059}
@@ -595,7 +657,103 @@ Transform:
   - {fileID: 903442375}
   - {fileID: 1501464429}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 143.381, z: 0}
+--- !u!1 &263398397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 263398401}
+  - component: {fileID: 263398400}
+  - component: {fileID: 263398399}
+  - component: {fileID: 263398398}
+  m_Layer: 0
+  m_Name: Plane / Tela picnic buena
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &263398398
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263398397}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &263398399
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263398397}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: e50e6d5f1dfe0814f9a2f502b6b9f6b9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &263398400
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263398397}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &263398401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263398397}
+  m_LocalRotation: {x: 0, y: 0.94937336, z: 0, w: 0.31414992}
+  m_LocalPosition: {x: 5.669916, y: 0.01525974, z: 7.4310713}
+  m_LocalScale: {x: 1.48, y: 1.48, z: 1.48}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 143.381, z: 0}
 --- !u!1 &267143423
 GameObject:
@@ -672,11 +830,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267143423}
   m_LocalRotation: {x: 0.64408314, y: 0.29181665, z: 0.29181665, w: -0.64408314}
-  m_LocalPosition: {x: 0.339, y: 0.056, z: 14.394}
+  m_LocalPosition: {x: 0.339, y: 0.23, z: 14.394}
   m_LocalScale: {x: 1, y: 2.1149, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 311.252}
 --- !u!1 &278598773
 GameObject:
@@ -689,7 +847,9 @@ GameObject:
   - component: {fileID: 278598774}
   - component: {fileID: 278598776}
   - component: {fileID: 278598775}
-  m_Layer: 0
+  - component: {fileID: 278598778}
+  - component: {fileID: 278598777}
+  m_Layer: 7
   m_Name: Plato (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -759,6 +919,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278598773}
   m_Mesh: {fileID: 2400065925009097386, guid: 388c3419279d6224ca1bd441b7a913d0, type: 3}
+--- !u!65 &278598777
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278598773}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 0.09528, z: 2}
+  m_Center: {x: 0.0000009536743, y: -0.038836997, z: 0}
+--- !u!54 &278598778
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278598773}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &300668537
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,7 +1206,7 @@ GameObject:
   - component: {fileID: 375714502}
   - component: {fileID: 375714504}
   - component: {fileID: 375714503}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Tornillos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1098,7 +1287,9 @@ GameObject:
   - component: {fileID: 376106832}
   - component: {fileID: 376106831}
   - component: {fileID: 376106830}
-  m_Layer: 0
+  - component: {fileID: 376106834}
+  - component: {fileID: 376106833}
+  m_Layer: 7
   m_Name: Miel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1170,6 +1361,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 143.381, z: 0}
+--- !u!54 &376106833
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376106829}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &376106834
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376106829}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.76811814, y: 0.689721, z: 0.76811814}
+  m_Center: {x: 0.013696999, y: -0.0378675, z: -0.045064006}
 --- !u!1001 &434083379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1187,7 +1407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2517110547797800505, guid: b918fea50fbe7354592fc178b2770d17, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.13
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 2517110547797800505, guid: b918fea50fbe7354592fc178b2770d17, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1225,6 +1445,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoalHand
       objectReference: {fileID: 0}
+    - target: {fileID: 2517110547797800518, guid: b918fea50fbe7354592fc178b2770d17, type: 3}
+      propertyPath: m_Radius
+      value: 1.01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b918fea50fbe7354592fc178b2770d17, type: 3}
 --- !u!1 &471864946
@@ -1238,7 +1462,9 @@ GameObject:
   - component: {fileID: 471864949}
   - component: {fileID: 471864948}
   - component: {fileID: 471864947}
-  m_Layer: 0
+  - component: {fileID: 471864951}
+  - component: {fileID: 471864950}
+  m_Layer: 7
   m_Name: Mermelada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1310,87 +1536,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 143.381, z: 0}
---- !u!1 &514035097
-GameObject:
+--- !u!54 &471864950
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 514035100}
-  - component: {fileID: 514035099}
-  - component: {fileID: 514035098}
-  m_Layer: 0
-  m_Name: Tela picnic 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &514035098
-MeshRenderer:
+  m_GameObject: {fileID: 471864946}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &471864951
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514035097}
+  m_GameObject: {fileID: 471864946}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: e50e6d5f1dfe0814f9a2f502b6b9f6b9, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &514035099
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514035097}
-  m_Mesh: {fileID: 4718051725048470943, guid: 08e7f08217d50d2498c33ba238cc27f1, type: 3}
---- !u!4 &514035100
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514035097}
-  m_LocalRotation: {x: -0, y: 0.9493739, z: -0, w: 0.3141484}
-  m_LocalPosition: {x: 5.669916, y: 0.015259743, z: 7.159938}
-  m_LocalScale: {x: 2.60616, y: 2.60616, z: 2.60616}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 143.381, z: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.76811814, y: 0.689721, z: 0.76811814}
+  m_Center: {x: 0.013696999, y: -0.0378675, z: -0.045064006}
 --- !u!1 &534872913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,7 +1576,7 @@ GameObject:
   - component: {fileID: 534872916}
   - component: {fileID: 534872915}
   - component: {fileID: 534872914}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Jam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1466,8 +1640,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534872913}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.00012657, y: 0.054, z: -0.0013538}
+  m_LocalScale: {x: 0.972967, y: 0.972967, z: 0.972967}
   m_Children: []
   m_Father: {fileID: 471864949}
   m_RootOrder: 0
@@ -1483,7 +1657,9 @@ GameObject:
   - component: {fileID: 589558734}
   - component: {fileID: 589558733}
   - component: {fileID: 589558732}
-  m_Layer: 0
+  - component: {fileID: 589558736}
+  - component: {fileID: 589558735}
+  m_Layer: 7
   m_Name: Plato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1553,6 +1729,35 @@ Transform:
   m_Father: {fileID: 2005409267}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 23.394, z: 0}
+--- !u!65 &589558735
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589558731}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0000002, y: 0.09528, z: 2.0000002}
+  m_Center: {x: 0, y: -0.038836997, z: 0.00000047683716}
+--- !u!54 &589558736
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589558731}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &757466588
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,7 +1864,9 @@ GameObject:
   - component: {fileID: 903442375}
   - component: {fileID: 903442374}
   - component: {fileID: 903442373}
-  m_Layer: 0
+  - component: {fileID: 903442377}
+  - component: {fileID: 903442376}
+  m_Layer: 7
   m_Name: Piedra2 sin smoosh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1729,6 +1936,35 @@ Transform:
   m_Father: {fileID: 258376071}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &903442376
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903442372}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &903442377
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903442372}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5104773, y: 1.256242, z: 1.5813181}
+  m_Center: {x: -0.05550853, y: 0.08496499, z: 0.250597}
 --- !u!1 &951855799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,7 +1976,9 @@ GameObject:
   - component: {fileID: 951855802}
   - component: {fileID: 951855801}
   - component: {fileID: 951855800}
-  m_Layer: 0
+  - component: {fileID: 951855804}
+  - component: {fileID: 951855803}
+  m_Layer: 7
   m_Name: Cuchillo Picnic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1810,6 +2048,35 @@ Transform:
   m_Father: {fileID: 2005409267}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 23.394}
+--- !u!54 &951855803
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951855799}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &951855804
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951855799}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16015016, y: 1.7819376, z: 0.05766004}
+  m_Center: {x: -0.042227965, y: 0.49535012, z: -0.000000006853001}
 --- !u!1 &952810718
 GameObject:
   m_ObjectHideFlags: 0
@@ -1904,7 +2171,7 @@ Transform:
   m_Children:
   - {fileID: 300668538}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 143.381, z: 0}
 --- !u!1 &1070782479
 GameObject:
@@ -1947,7 +2214,9 @@ GameObject:
   - component: {fileID: 1074000483}
   - component: {fileID: 1074000482}
   - component: {fileID: 1074000481}
-  m_Layer: 0
+  - component: {fileID: 1074000485}
+  - component: {fileID: 1074000484}
+  m_Layer: 7
   m_Name: Piedra (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2011,12 +2280,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1074000480}
   m_LocalRotation: {x: -0.51353186, y: -0.66146797, z: -0.53381115, w: -0.11743459}
-  m_LocalPosition: {x: -6.4034247, y: -0.03377205, z: -6.720653}
+  m_LocalPosition: {x: -6.062, y: -0.03377205, z: -6.701}
   m_LocalScale: {x: 0.47278994, y: 0.47279, z: 0.47279}
   m_Children: []
   m_Father: {fileID: 258376071}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 215.844, y: 659.772, z: 276.897}
+--- !u!65 &1074000484
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074000480}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4696358, y: 1.0688816, z: 1.1049145}
+  m_Center: {x: 0.131698, y: 0.083446525, z: -0.10161705}
+--- !u!54 &1074000485
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074000480}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1093962184
 GameObject:
   m_ObjectHideFlags: 0
@@ -2157,7 +2455,7 @@ GameObject:
   - component: {fileID: 1275869127}
   - component: {fileID: 1275869129}
   - component: {fileID: 1275869128}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Tapa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2331,7 +2629,9 @@ GameObject:
   - component: {fileID: 1350299185}
   - component: {fileID: 1350299187}
   - component: {fileID: 1350299186}
-  m_Layer: 0
+  - component: {fileID: 1350299189}
+  - component: {fileID: 1350299188}
+  m_Layer: 7
   m_Name: Plato (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2401,6 +2701,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350299184}
   m_Mesh: {fileID: 2400065925009097386, guid: 388c3419279d6224ca1bd441b7a913d0, type: 3}
+--- !u!54 &1350299188
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350299184}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1350299189
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350299184}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0000007, y: 0.09528005, z: 2.0000005}
+  m_Center: {x: 0.00000047710785, y: -0.03883703, z: 3.6169772e-11}
 --- !u!1 &1501464426
 GameObject:
   m_ObjectHideFlags: 0
@@ -2412,7 +2741,9 @@ GameObject:
   - component: {fileID: 1501464429}
   - component: {fileID: 1501464428}
   - component: {fileID: 1501464427}
-  m_Layer: 0
+  - component: {fileID: 1501464431}
+  - component: {fileID: 1501464430}
+  m_Layer: 7
   m_Name: Piedra (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2476,12 +2807,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501464426}
   m_LocalRotation: {x: 0.27922225, y: -0.20969619, z: -0.72869337, w: -0.5891253}
-  m_LocalPosition: {x: 6.859, y: 0.097, z: -6.172}
+  m_LocalPosition: {x: 7.049, y: 0.097, z: -6.023}
   m_LocalScale: {x: 0.47279, y: 0.47279, z: 0.47279}
   m_Children: []
   m_Father: {fileID: 258376071}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 219.39, y: 528.062, z: 286.378}
+--- !u!65 &1501464430
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501464426}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4696356, y: 1.0688816, z: 1.1049141}
+  m_Center: {x: 0.13169943, y: 0.08344417, z: -0.101618916}
+--- !u!54 &1501464431
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501464426}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1536022905
 GameObject:
   m_ObjectHideFlags: 0
@@ -2493,7 +2853,9 @@ GameObject:
   - component: {fileID: 1536022908}
   - component: {fileID: 1536022907}
   - component: {fileID: 1536022906}
-  m_Layer: 0
+  - component: {fileID: 1536022910}
+  - component: {fileID: 1536022909}
+  m_Layer: 7
   m_Name: Piedra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2557,12 +2919,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536022905}
   m_LocalRotation: {x: 0.017217755, y: -0.0352973, z: -0.999026, w: 0.020118559}
-  m_LocalPosition: {x: 6.8276, y: 0.27095, z: -6.6976}
+  m_LocalPosition: {x: 6.963, y: 0.27095, z: -6.862}
   m_LocalScale: {x: 0.59760654, y: 0.59760654, z: 0.59760654}
   m_Children: []
   m_Father: {fileID: 258376071}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 184.004, y: 537.942, z: 362.379}
+--- !u!54 &1536022909
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536022905}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1536022910
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536022905}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4696355, y: 1.0688813, z: 1.104914}
+  m_Center: {x: 0.13169657, y: 0.083446406, z: -0.10161794}
 --- !u!1 &1543771517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2593,7 +2984,7 @@ Transform:
   - {fileID: 543450652293628090}
   - {fileID: 543450652853458925}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: -0.735, y: 3.63, z: 5.821}
 --- !u!1 &1544046959
 GameObject:
@@ -2608,7 +2999,7 @@ GameObject:
   - component: {fileID: 1544046960}
   - component: {fileID: 1544046964}
   - component: {fileID: 1544046963}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: cesta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2689,7 +3080,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544046959}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 80
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2721,7 +3112,7 @@ GameObject:
   - component: {fileID: 1629031054}
   - component: {fileID: 1629031056}
   - component: {fileID: 1629031055}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Jam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2736,8 +3127,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1629031053}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.00023096, y: -0.0013582, z: -0.0024787}
+  m_LocalScale: {x: 0.9506, y: 0.9506, z: 0.9506}
   m_Children: []
   m_Father: {fileID: 376106832}
   m_RootOrder: 0
@@ -2848,7 +3239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2815580214828373942, guid: 3138b1d92a38df0478589a4cf82157d5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3138b1d92a38df0478589a4cf82157d5, type: 3}
@@ -2865,7 +3256,7 @@ GameObject:
   - component: {fileID: 1670130824}
   - component: {fileID: 1670130828}
   - component: {fileID: 1670130827}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Botella
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2928,13 +3319,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670130823}
-  m_LocalRotation: {x: -0, y: 0.9493739, z: -0, w: 0.3141484}
-  m_LocalPosition: {x: 4.956671, y: 0.54, z: 9.577454}
-  m_LocalScale: {x: 1.8505373, y: 1.8505373, z: 1.8505373}
+  m_LocalRotation: {x: 0.6139318, y: 0.7241537, z: -0.20315038, w: 0.23962303}
+  m_LocalPosition: {x: 3.9495, y: 0.667, z: 9.5782}
+  m_LocalScale: {x: 2.5846455, y: 2.5846455, z: 2.5846455}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 143.381, z: 0}
+  m_LocalEulerAnglesHint: {x: 36.047, y: 173.066, z: 78.324}
 --- !u!54 &1670130827
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2943,7 +3334,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670130823}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -3071,7 +3462,9 @@ GameObject:
   - component: {fileID: 1821447183}
   - component: {fileID: 1821447182}
   - component: {fileID: 1821447181}
-  m_Layer: 0
+  - component: {fileID: 1821447185}
+  - component: {fileID: 1821447184}
+  m_Layer: 7
   m_Name: Tenedor picnic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3141,6 +3534,35 @@ Transform:
   m_Father: {fileID: 2005409267}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 23.394}
+--- !u!54 &1821447184
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821447180}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1821447185
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821447180}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.24421616, y: 1.7534746, z: 0.11739306}
+  m_Center: {x: 0.0000000014989544, y: 0.04087676, z: -0.032675512}
 --- !u!1 &1849835728
 GameObject:
   m_ObjectHideFlags: 0
@@ -3152,7 +3574,9 @@ GameObject:
   - component: {fileID: 1849835731}
   - component: {fileID: 1849835730}
   - component: {fileID: 1849835729}
-  m_Layer: 0
+  - component: {fileID: 1849835733}
+  - component: {fileID: 1849835732}
+  m_Layer: 7
   m_Name: Plato (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3222,6 +3646,35 @@ Transform:
   m_Father: {fileID: 2005409267}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 214.875, z: 0}
+--- !u!54 &1849835732
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849835728}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1849835733
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849835728}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999999, y: 0.09528, z: 1.9999999}
+  m_Center: {x: 0, y: -0.038836997, z: -0.0000009536743}
 --- !u!1 &1903631311
 GameObject:
   m_ObjectHideFlags: 0
@@ -3233,7 +3686,9 @@ GameObject:
   - component: {fileID: 1903631314}
   - component: {fileID: 1903631313}
   - component: {fileID: 1903631312}
-  m_Layer: 0
+  - component: {fileID: 1903631316}
+  - component: {fileID: 1903631315}
+  m_Layer: 7
   m_Name: Piedra (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3297,12 +3752,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903631311}
   m_LocalRotation: {x: -0.3786777, y: -0.6982664, z: -0.5847151, w: 0.16472876}
-  m_LocalPosition: {x: 6.223741, y: 0.00536507, z: -6.450943}
+  m_LocalPosition: {x: 5.924, y: 0.00536507, z: -6.566}
   m_LocalScale: {x: 0.5976066, y: 0.5976066, z: 0.59760654}
   m_Children: []
   m_Father: {fileID: 258376071}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 250.276, y: 680.912, z: 264.998}
+--- !u!54 &1903631315
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903631311}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1903631316
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903631311}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4696358, y: 1.0688818, z: 1.1049145}
+  m_Center: {x: 0.13169752, y: 0.08344366, z: -0.10161706}
 --- !u!1001 &1908982292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3314,9 +3798,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hand
       objectReference: {fileID: 0}
+    - target: {fileID: 3060767329611391844, guid: f89a8ab26b754f84caef29e6f416ed4f, type: 3}
+      propertyPath: m_Drag
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060767329611391844, guid: f89a8ab26b754f84caef29e6f416ed4f, type: 3}
+      propertyPath: m_Mass
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3060767329611391846, guid: f89a8ab26b754f84caef29e6f416ed4f, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3060767329611391846, guid: f89a8ab26b754f84caef29e6f416ed4f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3324,11 +3816,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3060767329611391846, guid: f89a8ab26b754f84caef29e6f416ed4f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.75
+      value: 1.522
       objectReference: {fileID: 0}
     - target: {fileID: 3060767329611391846, guid: f89a8ab26b754f84caef29e6f416ed4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.68
+      value: 4.37
       objectReference: {fileID: 0}
     - target: {fileID: 3060767329611391846, guid: f89a8ab26b754f84caef29e6f416ed4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3373,7 +3865,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2005409267}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: "Cuberter\xEDa"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3402,7 +3894,7 @@ Transform:
   - {fileID: 347340447798618173}
   - {fileID: 347340448138168775}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 143.381, z: 0}
 --- !u!1 &2041537056
 GameObject:
@@ -3415,7 +3907,9 @@ GameObject:
   - component: {fileID: 2041537059}
   - component: {fileID: 2041537058}
   - component: {fileID: 2041537057}
-  m_Layer: 0
+  - component: {fileID: 2041537061}
+  - component: {fileID: 2041537060}
+  m_Layer: 7
   m_Name: Piedra (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3479,12 +3973,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2041537056}
   m_LocalRotation: {x: -0.8825872, y: -0.033937775, z: -0.46839002, w: -0.022335695}
-  m_LocalPosition: {x: -6.811526, y: 0.18481232, z: -6.415407}
+  m_LocalPosition: {x: -6.803, y: 0.18481232, z: -6.473}
   m_LocalScale: {x: 0.59760654, y: 0.5976066, z: 0.5976066}
   m_Children: []
   m_Father: {fileID: 258376071}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 179.563, y: 664.072, z: 355.364}
+--- !u!65 &2041537060
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041537056}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4696351, y: 1.068881, z: 1.1049143}
+  m_Center: {x: 0.1316994, y: 0.0834465, z: -0.101618}
+--- !u!54 &2041537061
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041537056}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2133990825
 GameObject:
   m_ObjectHideFlags: 0
@@ -3496,7 +4019,9 @@ GameObject:
   - component: {fileID: 2133990828}
   - component: {fileID: 2133990827}
   - component: {fileID: 2133990826}
-  m_Layer: 0
+  - component: {fileID: 2133990830}
+  - component: {fileID: 2133990829}
+  m_Layer: 7
   m_Name: Tenedor picnic (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3566,6 +4091,35 @@ Transform:
   m_Father: {fileID: 2005409267}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 214.875}
+--- !u!65 &2133990829
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133990825}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2442162, y: 1.7534742, z: 0.11739343}
+  m_Center: {x: -0.0000009544926, y: 0.040876996, z: -0.032675512}
+--- !u!54 &2133990830
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133990825}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!54 &347340447798618170
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3631,7 +4185,7 @@ GameObject:
   - component: {fileID: 347340447798618175}
   - component: {fileID: 347340447798618171}
   - component: {fileID: 347340447798618170}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Servilleta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3722,7 +4276,7 @@ GameObject:
   - component: {fileID: 347340448138168773}
   - component: {fileID: 347340448138168769}
   - component: {fileID: 347340448138168768}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Servilleta (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3899,31 +4453,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1172871840788632791, guid: 68cd50439fb33434cb89ed5a8c537a78, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.5456076
+      value: 5.1192627
       objectReference: {fileID: 0}
     - target: {fileID: 1172871840788632791, guid: 68cd50439fb33434cb89ed5a8c537a78, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.3315983
+      value: 4.1421175
       objectReference: {fileID: 0}
     - target: {fileID: 1172871840788632791, guid: 68cd50439fb33434cb89ed5a8c537a78, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.3437207
+      value: 0.7308514
       objectReference: {fileID: 0}
     - target: {fileID: 1172871840788632791, guid: 68cd50439fb33434cb89ed5a8c537a78, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.91649306
+      value: 0.9395262
       objectReference: {fileID: 0}
     - target: {fileID: 1172871840788632791, guid: 68cd50439fb33434cb89ed5a8c537a78, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.39976948
+      value: 0.34116113
       objectReference: {fileID: 0}
     - target: {fileID: 1172871840788632791, guid: 68cd50439fb33434cb89ed5a8c537a78, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.013748295
+      value: 0.028193902
       objectReference: {fileID: 0}
     - target: {fileID: 1172871840788632791, guid: 68cd50439fb33434cb89ed5a8c537a78, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0059971022
+      value: -0.010237991
       objectReference: {fileID: 0}
     - target: {fileID: 1172871840788632791, guid: 68cd50439fb33434cb89ed5a8c537a78, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4032,7 +4586,7 @@ GameObject:
   - component: {fileID: 2594729977330002642}
   - component: {fileID: 2594729977330002640}
   - component: {fileID: 2594729977330002643}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Contenido
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4115,7 +4669,7 @@ GameObject:
   - component: {fileID: 2594729978073944630}
   - component: {fileID: 2594729978073944629}
   - component: {fileID: 2594729978073944634}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pimentero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4227,7 +4781,7 @@ GameObject:
   - component: {fileID: 2594729978252901806}
   - component: {fileID: 2594729978252901804}
   - component: {fileID: 2594729978252901807}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Salida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4338,7 +4892,7 @@ GameObject:
   - component: {fileID: 5343930215068521744}
   - component: {fileID: 5343930215068521746}
   - component: {fileID: 5343930215068521747}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Contenido
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4405,7 +4959,7 @@ GameObject:
   - component: {fileID: 5343930215577875959}
   - component: {fileID: 5343930215577875961}
   - component: {fileID: 5343930215577875958}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Salida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4582,7 +5136,7 @@ GameObject:
   - component: {fileID: 5343930216617424750}
   - component: {fileID: 5343930216617424722}
   - component: {fileID: 5343930216617424723}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Salero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
