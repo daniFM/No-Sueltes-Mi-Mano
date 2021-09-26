@@ -14,6 +14,7 @@ public class HandController : MonoBehaviour
     public float tractionForce;
     public LayerMask grabObjectLayer;
     public Animator anim;
+    public HandSound sound;
 
     private Rigidbody rb;
     private bool active = true;
@@ -143,6 +144,8 @@ public class HandController : MonoBehaviour
         active = false;
         transform.DOMoveY(transform.position.y - 0.6f, 1);
         yield return new WaitForSeconds(1);
+        sound.source.spatialBlend = 0;
+        sound.PlaySound(HandSound.Sound.hand);
         GameController.instance.GrabHand();
     }
 
@@ -167,5 +170,8 @@ public class HandController : MonoBehaviour
                 //collision.transform.position = grabPosition.position; // se hace en el update
             }
         }
+
+        sound.source.spatialBlend = 1;
+        sound.PlaySound(HandSound.Sound.contact);
     }
 }
