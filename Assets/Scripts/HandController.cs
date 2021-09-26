@@ -12,6 +12,7 @@ public class HandController : MonoBehaviour
     public float extensionMultiplier;
     public float speed;
     public float tractionForce;
+    public float shake;
     public LayerMask grabObjectLayer;
     public Animator anim;
     public HandSound sound;
@@ -49,8 +50,10 @@ public class HandController : MonoBehaviour
         if(canMove)
         {
             //Debug.Log("MouseX: " + Input.GetAxis("Mouse X") + "\nMouseY: " + Input.GetAxis("Mouse Y"));
+            Vector3 shakeForce = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f)) * shake;
             Vector3 force = new Vector3(Input.GetAxis("Mouse X"), 0, Input.GetAxis("Mouse Y")) * speed * Time.deltaTime;
             force = transform.InverseTransformDirection(-force);
+            force += shakeForce;
             rb.AddForce(force, ForceMode.Acceleration);
 
             Vector3 rot = transform.eulerAngles;

@@ -5969,7 +5969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2815580214828373942, guid: 3138b1d92a38df0478589a4cf82157d5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3138b1d92a38df0478589a4cf82157d5, type: 3}
@@ -7915,6 +7915,10 @@ PrefabInstance:
     - target: {fileID: 3060767329611391846, guid: f89a8ab26b754f84caef29e6f416ed4f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060767329611391847, guid: f89a8ab26b754f84caef29e6f416ed4f, type: 3}
+      propertyPath: shake
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3060767329611391847, guid: f89a8ab26b754f84caef29e6f416ed4f, type: 3}
       propertyPath: handPivot
