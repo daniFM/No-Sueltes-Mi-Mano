@@ -7,6 +7,8 @@ public class HandController : MonoBehaviour
     public Transform handPivot;
     public Transform grabPosition;
     public Transform grabSphere;
+    public Transform extension;
+    public float extensionMultiplier;
     public float speed;
     public float tractionForce;
     public LayerMask grabObjectLayer;
@@ -35,6 +37,9 @@ public class HandController : MonoBehaviour
             Vector3 rot = transform.eulerAngles;
             transform.LookAt(handPivot.position, -Vector3.up);
             transform.eulerAngles = new Vector3(rot.x, transform.eulerAngles.y, rot.z);
+
+            //extension.position = handPivot.position;
+            extension.localScale = new Vector3(extension.localScale.x, Vector3.Distance(transform.position, handPivot.position) * extensionMultiplier, extension.localScale.z);
         }
 
         if(Input.GetMouseButtonDown(0))
