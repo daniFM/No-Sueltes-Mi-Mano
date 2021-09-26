@@ -15,7 +15,7 @@ public class PhoneController : MonoBehaviour
 
     void Start()
     {
-        PerformChat(GameManager.instance.levelIndex-1);
+        PerformChat(GameManager.instance.levelIndex);
     }
 
     public void PerformChat(int level)
@@ -50,6 +50,8 @@ public class PhoneController : MonoBehaviour
 
             yield return new WaitForSeconds(clip.length);
         }
+
+        GameManager.instance.NextLevel();
     }
 }
 
