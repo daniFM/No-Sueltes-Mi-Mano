@@ -2032,6 +2032,7 @@ GameObject:
   - component: {fileID: 1544046962}
   - component: {fileID: 1544046961}
   - component: {fileID: 1544046960}
+  - component: {fileID: 1544046963}
   m_Layer: 0
   m_Name: cesta
   m_TagString: Untagged
@@ -2105,6 +2106,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 7.386, z: -1.761}
+--- !u!64 &1544046963
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544046959}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2756080534600975859, guid: ec4315bb74788af45947c68a87305139, type: 3}
 --- !u!1 &1670130823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2883,7 +2898,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 347340448138168772}
   m_LocalRotation: {x: -0.022228606, y: 0.9601925, z: 0.050528042, w: -0.27383077}
-  m_LocalPosition: {x: 5.379158, y: 0.175, z: -0.88213277}
+  m_LocalPosition: {x: 5.38, y: 0.45, z: -0.85}
   m_LocalScale: {x: 1.8025, y: 1.8025, z: 1.8025}
   m_Children: []
   m_Father: {fileID: 2005409267}
@@ -3778,9 +3793,6 @@ MonoBehaviour:
   grabObjectLayer:
     serializedVersion: 2
     m_Bits: 128
-  anim: {fileID: 0}
-  openHandAnim: {fileID: 0}
-  closeHandAnim: {fileID: 0}
 --- !u!4 &5678031007018473495
 Transform:
   m_ObjectHideFlags: 0
