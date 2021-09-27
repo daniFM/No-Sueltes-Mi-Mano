@@ -713,7 +713,7 @@ GameObject:
   - component: {fileID: 1277422260}
   - component: {fileID: 1277422262}
   - component: {fileID: 1277422261}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Awa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1376,7 +1376,7 @@ GameObject:
   - component: {fileID: 1538790127}
   - component: {fileID: 1538790131}
   - component: {fileID: 1538790130}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Vaso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
