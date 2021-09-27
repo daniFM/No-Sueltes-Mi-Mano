@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public int levelIndex = 1;
+    public PauseMenu pauseMenu;
     [SerializeField] private AudioSource source;
 
     private void Awake()

@@ -66,6 +66,9 @@ public class HandController : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0))
         {
+            if(GameManager.instance != null && !GameManager.instance.pauseMenu.paused)
+                Cursor.lockState = CursorLockMode.Locked;
+
             canMove = true;
             grabbing = true;
             grabbedObject = GrabObject();
