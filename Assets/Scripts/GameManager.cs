@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public int levelIndex = 1;
+    [SerializeField] private AudioSource source;
 
     private void Awake()
     {
@@ -72,6 +73,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void RestartScene()
+    {
+        StartCoroutine(LoadScene((Scene)SceneManager.GetActiveScene().buildIndex));
+    }
+
     public void EndGame()
     {
         Fade.instance.FadeIn(3);
@@ -90,6 +96,15 @@ public class GameManager : MonoBehaviour
     {
         //Debug.Log("OnSceneLoaded");
         StartCoroutine(ExecuteAfterSeconds(0.5f));
+        
+        if(SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            source.enabled = false;
+        }
+        else
+        {
+            source.enabled = true;
+        }
     }
 
     private IEnumerator ExecuteAfterSeconds(float time)

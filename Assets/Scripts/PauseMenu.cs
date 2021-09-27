@@ -4,15 +4,44 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public bool paused;
+
     void Start()
     {
-        
+        transform.GetChild(0).gameObject.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            TogglePause();
+        }
+    }
+
+    public void TogglePause()
+    {
+        paused = !paused;
+        transform.GetChild(0).gameObject.SetActive(paused);
+
+        if(paused)
+        {
+            Time.timeScale = 0.000001f;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
+    }
+
+    public void Restart()
+    {
+        TogglePause();
+        GameManager.instance.RestartScene();
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }
