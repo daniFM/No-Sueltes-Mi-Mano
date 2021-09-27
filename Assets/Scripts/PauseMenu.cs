@@ -20,7 +20,8 @@ public class PauseMenu : MonoBehaviour
 
         //if(Input.GetMouseButton(0))
         //{
-        //    Cursor.lockState = CursorLockMode.Locked;
+        //    //Cursor.lockState = CursorLockMode.Locked;
+        //    Screen.fullScreen = true;
         //}
 
         if(Input.GetMouseButtonDown(1))

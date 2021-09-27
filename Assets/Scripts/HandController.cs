@@ -151,6 +151,7 @@ public class HandController : MonoBehaviour
         transform.DOMoveY(transform.position.y - 0.6f, 1);
         yield return new WaitForSeconds(1);
         sound.source.spatialBlend = 0;
+        sound.source.volume = 0.6f;
         sound.PlaySound(HandSound.Sound.hand);
         GameController.instance.GrabHand();
     }
@@ -178,6 +179,7 @@ public class HandController : MonoBehaviour
         }
 
         sound.source.spatialBlend = 1;
+        sound.source.volume = 1;
         sound.PlaySound(HandSound.Sound.contact);
     }
 }

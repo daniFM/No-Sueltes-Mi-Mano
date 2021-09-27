@@ -1938,17 +1938,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1985558504190655948, guid: f2668ab270bf59f4a8e128f893120d86, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3329679139952785163, guid: f2668ab270bf59f4a8e128f893120d86, type: 3}
       propertyPath: m_Name
       value: FadeCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 3329679139952785163, guid: f2668ab270bf59f4a8e128f893120d86, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3329679139952785164, guid: f2668ab270bf59f4a8e128f893120d86, type: 3}
       propertyPath: m_Pivot.x
@@ -2033,10 +2025,6 @@ PrefabInstance:
     - target: {fileID: 3329679139952785164, guid: f2668ab270bf59f4a8e128f893120d86, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525849448677813892, guid: f2668ab270bf59f4a8e128f893120d86, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2668ab270bf59f4a8e128f893120d86, type: 3}
