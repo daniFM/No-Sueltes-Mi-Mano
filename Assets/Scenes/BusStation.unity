@@ -8064,6 +8064,10 @@ PrefabInstance:
       value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 3060767329611391847, guid: f89a8ab26b754f84caef29e6f416ed4f, type: 3}
+      propertyPath: speed
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060767329611391847, guid: f89a8ab26b754f84caef29e6f416ed4f, type: 3}
       propertyPath: handPivot
       value: 
       objectReference: {fileID: 2051988176}
