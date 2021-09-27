@@ -134,8 +134,9 @@ MonoBehaviour:
   grabSphere: {fileID: 3060767329708694405}
   extension: {fileID: 9044855763385564095}
   extensionMultiplier: 1.2
-  speed: 10000
+  speed: 5000
   tractionForce: 10000
+  shake: 0
   grabObjectLayer:
     serializedVersion: 2
     m_Bits: 128
